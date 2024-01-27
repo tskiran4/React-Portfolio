@@ -6,9 +6,10 @@ function NavBar()  {
     <div className="wrapper">
         <span>ME</span>
         <div className="Links">
-            <a href="#">Blogs</a>
-            <a href="#">Works</a>
-            <a href="#">Contact</a>
+            <a href="/#">Blogs</a>
+            
+            <a href="/#">Works</a>
+            <a href="/#">Contact</a>
         </div>
     </div>
  </div>
