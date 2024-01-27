@@ -1,16 +1,20 @@
 import logo from './logo.svg';
-import './App.css';
+import NavBar from './components/NavBar';
+// import './App.css';
+import './app.scss';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Push Test
-        </p>
-      </header>
-    </div>
+  <div>
+    <section><NavBar/></section>
+    <section>Hero</section>
+    <section>Parallax</section>
+    <section>Services</section>
+    <section>Parallax</section>
+    <section>Portfolio</section>
+    <section>Contact</section>
+  </div>
+
   );
 }
 
