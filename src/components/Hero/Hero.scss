@@ -1,0 +1,170 @@
+     
+h2{
+    font-size: 30px;  
+    font-weight: normal; 
+  }
+   
+ h1{
+    font-size: 100px;
+    font-weight: bold;
+    }
+.hero
+{
+    height: 100vh;
+    // background: linear-gradient(180deg, #141414, #000);
+    overflow: hidden;
+    max-width: 100%;
+    position: relative;
+
+    .wrapper{
+        max-width: 1366px;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+
+        .textContainer
+        {
+            height: 100%;
+            width: 20%;
+            display: inline-flex;
+            flex-direction: column;
+            justify-content: end;
+            padding-block-end: 10%;
+            //gap: 40px;
+
+            .underLine
+            {
+                height: 10px;
+                width: 70px;
+                background-color: #E46128;
+            }
+
+        }
+        .aboutContainer
+        {
+            height: 100%;
+            flex-direction: column;
+            justify-content: end;
+            display: inline-flex;
+            padding-block-end: 10%;
+            width: 30%;
+        }
+    }
+
+    .imageContainer{
+        height: 100%;
+        flex-direction: column;
+        justify-content: end;
+        display: inline-flex;
+        padding-block-end: 10%;
+        //height: 100%; 
+        // position: absolute;
+        // bottom: 0;
+        // left:20%;
+
+        img{
+            max-width: 350px;
+            z-index: 2;
+            user-select: none;
+        }
+
+    }
+    .scrollContainer
+    {
+        display: block;
+
+    }
+    .course
+    {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top:40%;
+        left:30%;
+        //z-index: -1;
+        justify-content: center;
+        .box
+        {
+            width: 250px;
+            height: 250px;
+           
+            background-color: #CBAD83;
+            border-radius: 50%;
+            //mix-blend-mode: difference;
+            top: 0;
+            left:20%; 
+        }
+    }
+    .slidingTextContainer
+    {
+        position: absolute;
+        font-size: 50vh;
+        bottom: -10px;
+        white-space: nowrap;
+        color: #ffffff09;
+        width: 50%;
+        font-weight: bold;
+    }
+}
+
+$breakpoint-mobile: 600px;
+@media (max-width: $breakpoint-mobile) {
+    h2{
+        font-size: 20px;  
+        font-weight: normal; 
+      }
+       
+     h1{
+        font-size: 50px;
+        font-weight: bold;
+        }
+    .hero
+{
+    height:100%;
+    
+    .wrapper{
+        flex-wrap: wrap;
+
+    .textContainer
+    {
+        height: 70%;
+        width: 30%;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+    .imageContainer{
+        height: 70%;
+        width: 70%;
+        flex-direction: column;
+        justify-content: end;
+        display: inline-flex;
+    }
+    }
+}
+    .hero 
+    .wrapper 
+    .aboutContainer
+        {
+            width: 100%;
+            display: block;
+        }
+        .hero
+        .imageContainer
+            img{
+                max-width: 250px;
+            }
+        .hero
+        .course
+        {
+            top:30%;
+           left:35%;
+        .box
+        {
+            height: 150px;
+            width: 150px;
+        }
+        
+}
+}

@@ -1,19 +1,23 @@
 import logo from './logo.svg';
-import NavBar from './components/NavBar';
+import NavBar from './components/NavBar/NavBar';
+import Hero from './components/Hero/Hero'
 import './App.css';
 import './app.scss';
+import Test from './Test';
 
 function App() {
   return (
   <div>
-    <section><NavBar/></section>
-    
-    <section>Hero</section>
-    <section>Parallax</section>
-    <section>Services</section>
-    <section>Parallax</section>
-    <section>Portfolio</section>
-    <section>Contact</section>
+    <section id="Homepage"><NavBar/>
+    <Hero/>
+    </section>
+   
+    {/* <section>Parallax</section> */}
+  
+    {/* <section id = "About me">Services</section>
+    <section id= "Blogs">Parallax</section>
+    <section id = "Works">Portfolio</section>
+    <section id = "Contact">Contact</section>   */}
   </div>
 
   );

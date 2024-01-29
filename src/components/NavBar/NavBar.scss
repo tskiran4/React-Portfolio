@@ -1,0 +1,36 @@
+a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+    color: #ffffff;
+}
+.navbar
+{
+    height: 0px;
+
+    .wrapper
+    {
+        padding-top: 50px;
+       max-width: 1366px;
+       margin : auto;  
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       .links
+       {
+        text-align: right;
+        z-index: 2;
+       }
+       .links a
+       {
+        display: block;
+        margin-bottom: 15px;
+       }
+    }
+}
+$breakpoint-mobile: 600px;
+@media (max-width: $breakpoint-mobile) {
+    a{
+        font-size: 20px; 
+    }
+}

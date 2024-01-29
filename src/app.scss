@@ -1,9 +1,19 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy'), url(./fonts/Gilroy-Bold.ttf) format('truetype');
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy'), url(./fonts/Gilroy-Regular.ttf) format('truetype');
+    font-weight: normal;
+  }
 *
 {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "DM Sans";
+    font-family: "Gilroy";
 
 }
 body{
@@ -11,10 +21,34 @@ body{
     color: #fafafa;
 }
 html{
-    scroll-snap-type: y mandatory;
+    // scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
 }
 section{
     height: 100vh;
     scroll-snap-align: center;
+}
+
+.course
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .box
+    {
+        width: 200px;
+        height: 200px;
+        background-color: #e46128;
+        border-radius: 50%;
+        //mix-blend-mode: difference;
+    }
+}
+
+$breakpoint-tablet: 1366px;
+@media (max-width: $breakpoint-tablet) {
+    .wrapper
+    {
+        margin: 0 5% !important;
+    }
+  
 }
