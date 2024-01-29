@@ -6,6 +6,7 @@ import './app.scss';
 import Test from './Test';
 
 function App() {
+  document.title="krnts.";
   return (
   <div>
     <section id="Homepage"><NavBar/>

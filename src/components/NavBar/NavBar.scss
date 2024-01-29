@@ -30,7 +30,9 @@ a{
 }
 $breakpoint-mobile: 600px;
 @media (max-width: $breakpoint-mobile) {
-    a{
-        font-size: 20px; 
+    .navbar{
+        .wrapper
+    {
+        padding-top: 20px;
     }
 }
