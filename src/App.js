@@ -1,9 +1,8 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import NavBar from './components/NavBar/NavBar';
 import Hero from './components/Hero/Hero'
 import './App.css';
 import './app.scss';
-import Test from './Test';
 
 function App() {
   document.title="krnts.";

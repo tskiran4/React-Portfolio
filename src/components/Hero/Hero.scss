@@ -29,7 +29,7 @@ h2{
             width: 20%;
             display: inline-flex;
             flex-direction: column;
-            justify-content: end;
+            justify-content: flex-end;
             padding-block-end: 10%;
             //gap: 40px;
 
@@ -45,7 +45,7 @@ h2{
         {
             height: 100%;
             flex-direction: column;
-            justify-content: end;
+            justify-content: flex-end;
             display: inline-flex;
             padding-block-end: 10%;
             width: 30%;
@@ -55,7 +55,7 @@ h2{
     .imageContainer{
         height: 100%;
         flex-direction: column;
-        justify-content: end;
+        justify-content: flex-end;
         display: inline-flex;
         padding-block-end: 10%;
         //height: 100%; 
@@ -132,13 +132,13 @@ $breakpoint-mobile: 600px;
         width: 30%;
         display: inline-flex;
         flex-direction: column;
-        justify-content: end;
+        justify-content: flex-end;
     }
     .imageContainer{
         height: 70%;
         width: 70%;
         flex-direction: column;
-        justify-content: end;
+        justify-content: flex-end;
         display: inline-flex;
     }
     }
