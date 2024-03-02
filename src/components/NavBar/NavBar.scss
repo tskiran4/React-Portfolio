@@ -14,10 +14,19 @@ a{
        max-width: 1366px;
        margin : auto;  
        display: flex;
-       align-items: center;
        justify-content: space-between;
+       .logo
+       {
+        font-size: 30px;
+        font-weight: bold;
+       }
+       .logo::after {
+        content: attr(data-end) ;
+        color: #E46128 ;
+       }
        .links
        {
+        
         text-align: right;
         z-index: 2;
        }
@@ -30,6 +39,9 @@ a{
 }
 $breakpoint-mobile: 600px;
 @media (max-width: $breakpoint-mobile) {
+    a{
+        font-size: 20px;
+    }
     .navbar{
         .wrapper
     {

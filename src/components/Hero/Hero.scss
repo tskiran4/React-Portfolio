@@ -1,13 +1,3 @@
-     
-h2{
-    font-size: 30px;  
-    font-weight: normal; 
-  }
-   
- h1{
-    font-size: 100px;
-    font-weight: bold;
-    }
 .hero
 {
     height: 100vh;
@@ -80,20 +70,24 @@ h2{
         display: flex;
         align-items: center;
         position: absolute;
-        top:40%;
-        left:30%;
+        top:0;
+        left:0;
         //z-index: -1;
         justify-content: center;
         .box
         {
-            width: 250px;
-            height: 250px;
+            margin: auto;
+            max-width: 1600px;
+            align-items: center;
+            text-align: center;
+            // width: 250px;
+            // height: 250px;
            
-            background-color: #CBAD83;
-            border-radius: 50%;
+            // background-color: #CBAD83;
+            // border-radius: 50%;
             //mix-blend-mode: difference;
             top: 0;
-            left:20%; 
+            //left:20%; 
         }
     }
     .slidingTextContainer
@@ -110,12 +104,13 @@ h2{
 
 $breakpoint-mobile: 600px;
 @media (max-width: $breakpoint-mobile) {
+
     h2{
         font-size: 20px;  
         font-weight: normal; 
       }
        
-     h1{
+     .titleText{
         font-size: 50px;
         font-weight: bold;
         }
@@ -129,14 +124,14 @@ $breakpoint-mobile: 600px;
     .textContainer
     {
         height: 70%;
-        width: 30%;
+        width: 40%;
         display: inline-flex;
         flex-direction: column;
         justify-content: flex-end;
     }
     .imageContainer{
         height: 70%;
-        width: 70%;
+        width: 60%;
         flex-direction: column;
         justify-content: flex-end;
         display: inline-flex;
@@ -148,23 +143,22 @@ $breakpoint-mobile: 600px;
     .aboutContainer
         {
             width: 100%;
-            display: block;
+            display: none;
         }
         .hero
         .imageContainer
             img{
-                max-width: 250px;
+                max-width: 200px;
             }
-        .hero
-        .course
-        {
-            top:30%;
-           left:35%;
-        .box
-        {
-            height: 150px;
-            width: 150px;
-        }
+        // .hero
+        // .course
+        // {
+        //     top:35%;
+        //    left:35%;
+        // .box
+        // {
+        //     height: 120px;
+        //     width: 120px;
+        // }
         
-}
 }

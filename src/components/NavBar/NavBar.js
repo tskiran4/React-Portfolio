@@ -23,7 +23,7 @@ const NavBar = () =>  {
     return (
  <div className="navbar">
     <div className="wrapper">
-        <span> </span>
+        <span className="logo" data-end=".">krnts</span>
 
 <motion.div className="links" 
             variants={containerVariants}

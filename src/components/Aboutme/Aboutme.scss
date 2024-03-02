@@ -1,0 +1,131 @@
+.About
+{
+    height: 100vh;
+    // background: linear-gradient(180deg, #141414, #000);
+    overflow: hidden;
+    max-width: 100%;
+    position: relative;
+    padding-top: 40px;
+
+    .wrapper{
+        max-width: 1366px;
+        height: 100%;
+        margin: auto;
+        .underLine
+        {
+            height: 10px;
+            width: 70px;
+            background-color: #E46128;
+            margin-bottom: 40px;
+        }
+
+        .col-container
+        {
+            display: flex;
+            justify-content: space-between;
+        }
+        .column
+        {   width: 30%;
+        }
+        .col-box
+        {
+            background: #252525;
+            border-radius: 20px;
+            padding: 20px;
+            margin: 30px 0;
+            font-weight: bold;
+            position: relative;
+            max-width: 250px;
+        }
+        .image-bg
+        {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        .grad-hat-img
+        {
+            width: 75px;
+            position: absolute;
+            top:-20px;
+            left: -25px;
+        }
+
+        .image-bg img
+        {
+            padding: 20px;
+            display: block;
+            border-radius: 50px;
+            background: #CBAD83;
+            width: fit-content;
+            margin: auto;
+        }
+        .card-col
+        {
+            background: #252525;
+            border-radius: 20px;
+            padding: 20px;
+        }
+        .skill-box
+        {
+            border: solid 2px #CBAD83;
+            border-radius: 15px;
+            justify-content: center;
+            align-items: center;
+            color: #CBAD83;
+            width: fit-content;
+            padding: 10px;
+            font-weight: bold;
+            display: inline-flex;
+            flex-wrap: wrap;
+            margin: 5px;
+        }
+        .container-2
+        {
+            .column 
+            {
+                background: #252525;
+                padding: 30px;
+                border-radius: 25px;
+                img{
+                    width: 5vw;
+                    height: fit-content;
+                }
+            }
+            .work-row
+            {
+                display: inline-flex;
+                width: 100%;
+                align-items: center;
+                justify-content: space-around;
+                gap: 20px;
+            }
+            .col-1
+            {
+                border: 2px solid #B12A74;
+                h2{
+                    font-size: 24px;
+                    color: #FF52A5;
+                }
+            }
+            .col-2
+            {
+                border: 2px solid #F18D3D;
+                h2{
+                    font-size: 24px;
+                    color: #F28F54;
+                }
+            }
+            .col-3
+            {
+                border: 2px solid #FFC600;
+                h2{
+                    font-size: 24px;
+                    color: #FFBC01;
+                }
+            }
+        }
+
+    }
+
+
+}

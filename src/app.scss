@@ -8,6 +8,28 @@
     src: local('Gilroy'), url(./fonts/Gilroy-Regular.ttf) format('truetype');
     font-weight: normal;
   }
+h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+     
+h2{
+    font-size: 30px;  
+    font-weight: bold; 
+  }
+   
+ .titleText{
+    font-size: 100px;
+    font-weight: bold;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    }
+p{
+    letter-spacing: 1px ;
+    line-height: 20px;
+}
 *
 {
     padding: 0;
@@ -21,7 +43,7 @@ body{
     color: #fafafa;
 }
 html{
-    // scroll-snap-type: y mandatory;
+    scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
 }
 section{
@@ -29,20 +51,6 @@ section{
     scroll-snap-align: center;
 }
 
-.course
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    .box
-    {
-        width: 200px;
-        height: 200px;
-        background-color: #e46128;
-        border-radius: 50%;
-        //mix-blend-mode: difference;
-    }
-}
 
 $breakpoint-tablet: 1366px;
 @media (max-width: $breakpoint-tablet) {
